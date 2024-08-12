@@ -14,5 +14,19 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        Project[] projects = {
+                new Project("getting started app",
+                        "a simple getting started app for learning android studio setup",
+                        R.drawable.start),
+                new Project("length converter app",
+                        "a simple length converter app that converts length " +
+                                "(ex m to inch) based on user input", R.drawable.tape),
+                new Project("vancouver restaurant app",
+                        "a simple restaurant app that has several dishes",
+                        R.drawable.food),
+                new Project("simple reminder app",
+                        "simple reminder app that adds tasks and shows time remaining",
+                        R.drawable.todo)
+        };
     }
 }
